@@ -1,0 +1,35 @@
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Qt generated files
+*.moc
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+*.qmlc
+*.jsc
+*.autogen/
+
+# IDE files
+.idea/
+.vscode/
+*.user
+*.user.*
+*.suo
+*.sln
