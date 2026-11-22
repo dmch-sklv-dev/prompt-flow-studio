@@ -21,9 +21,8 @@ QString PromptStep::getTypeName() const {
 }
 
 int PromptStep::estimateTokens(const ExecutionContext &ctx) const {
-    Q_UNUSED(ctx);
-    // Initial estimation based on template string
-    return std::max(1, static_cast<int>(m_promptTemplate.length() / 4));
+    QString finalPrompt = ctx.interpolate(m_promptTemplate);
+    return std::max(1, static_cast<int>(finalPrompt.length() / 4));
 }
 
 bool PromptStep::execute(ExecutionContext &ctx) {
