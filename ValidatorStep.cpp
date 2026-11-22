@@ -39,9 +39,9 @@ bool ValidatorStep::execute(ExecutionContext &ctx) {
     QString errorMsg;
 
     if (m_rule == "NotEmpty") {
-        if (sourceText.isEmpty()) {
+        if (sourceText.trimmed().isEmpty()) {
             passed = false;
-            errorMsg = "Validation failed: source output is completely empty.";
+            errorMsg = "Validation failed: source output is empty or contains only whitespace.";
         }
     } else if (m_rule == "MinLength") {
         int minLen = m_ruleValue.toInt();
