@@ -94,7 +94,10 @@ cmake --build build
 
 ## Cross-Review and Quality Assurance
 
-The project undergoes peer testing and cross-review in accordance with academic course requirements. Reported issues, reproduction steps, and fixes are tracked through GitHub Issues and resolved via Pull Requests.
+The project underwent peer cross-testing according to academic course requirements. Reported issues and fixes were tracked through GitHub Issues and resolved via Pull Request:
+
+- [Issue #1](https://github.com/dmch-sklv-dev/prompt-flow-studio/issues/1) (reported by @yamerodf): `ValidatorStep passes validation on whitespace-only output for 'NotEmpty' rule` (Resolved via PR #3).
+- [Issue #2](https://github.com/dmch-sklv-dev/prompt-flow-studio/issues/2) (reported by @MoriNoAkuma): `TokenEstimator does not account for substituted variable length in PromptStep` (Resolved via PR #3).
 
 ---
 
